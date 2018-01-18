@@ -23,13 +23,13 @@ public class CloudantClientConfig {
     @Autowired
     protected ServiceMappings mappings;
 
-    @Value("${cloudant.url}")
+    @Value("${cloudant.url : }")
     protected String resourceUrl;
 
-    @Value("${cloudant.username}")
+    @Value("${cloudant.username : }")
     protected String resourceUsername;
 
-    @Value("${cloudant.password}")
+    @Value("${cloudant.password : }")
     protected String resourcePassword;
     
 
